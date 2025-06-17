@@ -1,0 +1,210 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 2025-06-07 15:54:09
+Description: Exception in server tick loop
+
+java.lang.IllegalStateException: Failed to initialize server
+	at knot//net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:684)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:265)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.15, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Amazon.com Inc.
+	Memory: 290916984 bytes (277 MiB) / 507510784 bytes (484 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 4800H with Radeon Graphics         
+	Identifier: AuthenticAMD Family 23 Model 96 Stepping 1
+	Microarchitecture: unknown
+	Frequency (GHz): 2.89
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce RTX 3050 Ti Laptop GPU
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x25a0
+	Graphics card #0 versionInfo: DriverVersion=32.0.15.6607
+	Graphics card #1 name: AMD Radeon(TM) Graphics
+	Graphics card #1 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #1 VRAM (MB): 512.00
+	Graphics card #1 deviceId: 0x1636
+	Graphics card #1 versionInfo: DriverVersion=31.0.12028.9001
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 27055.11
+	Virtual memory used (MB): 15494.04
+	Swap memory total (MB): 11264.00
+	Swap memory used (MB): 793.53
+	JVM Flags: 1 total; -Xmx4G
+	Fabric Mods: 
+		antiquelegacy: Epic Knights: Antique Legacy 1.8
+		architectury: Architectury 9.2.14
+		balm: Balm 7.3.31
+			kuma_api: KumaAPI 20.1.10
+		biomesoplenty: BiomesOPlenty 19.0.0.96
+		bookshelf: Bookshelf 20.2.13
+		c2me: Concurrent Chunk Management Engine 0.2.0+alpha.11.16
+			c2me-base: Concurrent Chunk Management Engine (Base) 0.2.0+alpha.11.16
+			c2me-fixes-chunkio-threading-issues: Concurrent Chunk Management Engine (Fixes/Chunk IO/Threading Issues) 0.2.0+alpha.11.16
+			c2me-fixes-general-threading-issues: Concurrent Chunk Management Engine (Fixes/General/Threading Issues) 0.2.0+alpha.11.16
+			c2me-fixes-worldgen-threading-issues: Concurrent Chunk Management Engine (Fixes/WorldGen/Threading Issues) 0.2.0+alpha.11.16
+			c2me-fixes-worldgen-vanilla-bugs: Concurrent Chunk Management Engine (Fixes/WorldGen/Vanilla Bugs) 0.2.0+alpha.11.16
+			c2me-notickvd: Concurrent Chunk Management Engine (No Tick View Distance) 0.2.0+alpha.11.16
+			c2me-opts-allocs: Concurrent Chunk Management Engine (Optimizations/Memory Allocations) 0.2.0+alpha.11.16
+			c2me-opts-chunk-access: Concurrent Chunk Management Engine (Optimizations/Chunk Access) 0.2.0+alpha.11.16
+			c2me-opts-chunkio: Concurrent Chunk Management Engine (Optimizations/Chunk IO) 0.2.0+alpha.11.16
+			c2me-opts-math: Concurrent Chunk Management Engine (Optimizations/Math) 0.2.0+alpha.11.16
+			c2me-opts-scheduling: Concurrent Chunk Management Engine (Optimizations/Scheduling) 0.2.0+alpha.11.16
+			c2me-opts-worldgen-general: Concurrent Chunk Management Engine (Optimizations/General WorldGen) 0.2.0+alpha.11.16
+			c2me-opts-worldgen-vanilla: Concurrent Chunk Management Engine (Optimizations/Vanilla WorldGen) 0.2.0+alpha.11.16
+			c2me-rewrites-chunk-serializer: Concurrent Chunk Management Engine (Rewrites/Chunk Serializer) 0.2.0+alpha.11.16
+			c2me-rewrites-chunkio: Concurrent Chunk Management Engine (Rewrites/Chunk IO) 0.2.0+alpha.11.16
+			c2me-server-utils: Concurrent Chunk Management Engine (Server Utils) 0.2.0+alpha.11.16
+			c2me-threading-chunkio: Concurrent Chunk Management Engine (Threading/WorldGen) 0.2.0+alpha.11.16
+			c2me-threading-lighting: Concurrent Chunk Management Engine (Threading/Lighting) 0.2.0+alpha.11.16
+			c2me-threading-worldgen: Concurrent Chunk Management Engine (Threading/WorldGen) 0.2.0+alpha.11.16
+			com_ibm_async_asyncutil: asyncutil 0.1.0
+			net_objecthunter_exp4j: exp4j 0.4.8
+			org_threadly_threadly: threadly 7.0
+		cicada: CICADA 0.13.0+1.20.1
+			org_yaml_snakeyaml: snakeyaml 2.2
+		cloth-config: Cloth Config v11 11.1.136
+			cloth-basic-math: cloth-basic-math 0.6.1
+		coroutil: CoroUtil 1.20.1-1.3.7
+		cristellib: Cristel Lib 1.1.5
+			blue_endless_jankson: jankson 1.2.3
+		do_a_barrel_roll: Do a Barrel Roll 3.6.1+1.20.1
+			mixinsquared: MixinSquared 0.1.1
+		easyanvils: Easy Anvils 8.0.2
+		entityculling: EntityCulling 1.7.4
+		fabric-api: Fabric API 0.92.6+1.20.1
+			fabric-api-base: Fabric API Base 0.4.32+1802ada577
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.37+1802ada577
+			fabric-biome-api-v1: Fabric Biome API (v1) 13.0.14+1802ada577
+			fabric-block-api-v1: Fabric Block API (v1) 1.0.12+1802ada577
+			fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.3+924f046a77
+			fabric-command-api-v1: Fabric Command API (v1) 1.2.35+f71b366f77
+			fabric-command-api-v2: Fabric Command API (v2) 2.2.14+1802ada577
+			fabric-commands-v0: Fabric Commands (v0) 0.2.52+df3654b377
+			fabric-containers-v0: Fabric Containers (v0) 0.1.67+df3654b377
+			fabric-content-registries-v0: Fabric Content Registries (v0) 4.0.13+1802ada577
+			fabric-convention-tags-v1: Fabric Convention Tags 1.5.6+1802ada577
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.20+1802ada577
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.0.2+de0fd6d177
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 12.3.7+1802ada577
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 2.1.55+1802ada577
+			fabric-entity-events-v1: Fabric Entity Events (v1) 1.6.1+1c78457f77
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.6.5+13a40c6677
+			fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.64+df3654b377
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.41+1802ada577
+			fabric-item-api-v1: Fabric Item API (v1) 2.1.29+1802ada577
+			fabric-item-group-api-v1: Fabric Item Group API (v1) 4.0.14+1802ada577
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.2.23+1802ada577
+			fabric-loot-api-v2: Fabric Loot API (v2) 1.2.3+1802ada577
+			fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.1.47+9e7660c677
+			fabric-message-api-v1: Fabric Message API (v1) 5.1.10+1802ada577
+			fabric-mining-level-api-v1: Fabric Mining Level API (v1) 2.1.52+1802ada577
+			fabric-networking-api-v1: Fabric Networking API (v1) 1.3.14+a158aa0477
+			fabric-networking-v0: Fabric Networking (v0) 0.3.54+df3654b377
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 11.1.5+e35120df77
+			fabric-particles-v1: Fabric Particles (v1) 1.1.3+1802ada577
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 1.0.24+1802ada577
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 2.3.6+1802ada577
+			fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.39+92a0d36777
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.0.29+1802ada577
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 2.3.9+1802ada577
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.11.12+fb82e9d777
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.33+1802ada577
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 3.3.6+8dd72ea377
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 4.3.2+1802ada577
+		fabric-language-kotlin: Fabric Language Kotlin 1.13.2+kotlin.2.1.20
+			org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 2.1.20
+			org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 2.1.20
+			org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 2.1.20
+			org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 2.1.20
+			org_jetbrains_kotlinx_atomicfu-jvm: atomicfu-jvm 0.27.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.10.1
+			org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.10.1
+			org_jetbrains_kotlinx_kotlinx-datetime-jvm: kotlinx-datetime-jvm 0.6.2
+			org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm: kotlinx-io-bytestring-jvm 0.7.0
+			org_jetbrains_kotlinx_kotlinx-io-core-jvm: kotlinx-io-core-jvm 0.7.0
+			org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm: kotlinx-serialization-cbor-jvm 1.8.0
+			org_jetbrains_kotlinx_kotlinx-serialization-core-jvm: kotlinx-serialization-core-jvm 1.8.0
+			org_jetbrains_kotlinx_kotlinx-serialization-json-jvm: kotlinx-serialization-json-jvm 1.8.0
+		fabricloader: Fabric Loader 0.16.14
+			mixinextras: MixinExtras 0.4.1
+		fallingtree: FallingTree 4.3.2
+		ferritecore: FerriteCore 6.0.1
+		flow: Flow 2.2.0+1.20.1
+		forgeconfigapiport: Forge Config API Port 8.0.2
+		fzzy_config: Fzzy Config 0.6.9+1.20.1
+			fabric-permissions-api-v0: fabric-permissions-api 0.3.1
+			net_peanuuutz_tomlkt_tomlkt-jvm: tomlkt-jvm 0.3.7
+		glitchcore: GlitchCore 0.0.1.1
+			com_electronwill_night-config_core: core 3.6.7
+			com_electronwill_night-config_toml: toml 3.6.7
+			net_jodah_typetools: typetools 0.6.3
+		immersiveui: ImmersiveUI 0.3.0
+		java: OpenJDK 64-Bit Server VM 17
+		jei: Just Enough Items 15.20.0.112
+		lithium: Lithium 0.11.3
+		luckperms: LuckPerms 5.4.88
+		magistuarmory: Epic Knights Mod 9.23
+		magistuarmoryaddon: Epic Knights: Addon 1.22
+		memoryleakfix: Memory Leak Fix 1.1.5
+		minecraft: Minecraft 1.20.1
+		mr_tidal_towns: Tidal Towns 1.3.4
+		mru: Mineblock's Repeated Utilities 1.0.4+1.20.1+fabric
+		notenoughanimations: NotEnoughAnimations 1.9.3
+		octolib: OctoLib 0.5.0.1
+		owo: oωo 0.11.2+1.20
+		player-animator: Player Animator 1.0.2-rc1+1.20
+		puzzleslib: Puzzles Lib 8.1.32
+			puzzlesaccessapi: Puzzles Access Api 20.1.1
+		satisfying_buttons: Satisfying Buttons 1.1.2
+		seriousplayeranimations: Serious Player Animations 1.1.1
+		skinlayers3d: 3d-Skin-Layers 1.7.5
+		skinrestorer: SkinRestorer 2.3.3+1.20-fabric
+			org_mineskin_java-client: java-client 3.0.1-SNAPSHOT
+		slavicarmory: Epic Knights: Slavic Armory 1.5
+		subtle_effects: Subtle Effects 1.9.4-hotfix.1
+		sushi_bar: Sushi Bar 0.2.2+1.20
+			com_moulberry_mixinconstraints: mixinconstraints 1.0.1
+		t_and_t: Towns and Towers 1.12
+		tab: TAB 5.2.1
+		terrablender: TerraBlender 3.0.1.10
+		tlc: The Lost Castle 1.0.1
+		watut: What Are They Up To 1.20.1-1.2.3
+		waystones: Waystones 14.1.13
+		xaerominimap: Xaero's Minimap 25.2.6
+		xaeroworldmap: Xaero's World Map 1.39.9
+		yet_another_config_lib_v3: YetAnotherConfigLib 3.6.6+1.20.1-fabric
+			com_twelvemonkeys_common_common-image: common-image 3.12.0
+			com_twelvemonkeys_common_common-io: common-io 3.12.0
+			com_twelvemonkeys_common_common-lang: common-lang 3.12.0
+			com_twelvemonkeys_imageio_imageio-core: imageio-core 3.12.0
+			com_twelvemonkeys_imageio_imageio-metadata: imageio-metadata 3.12.0
+			com_twelvemonkeys_imageio_imageio-webp: imageio-webp 3.12.0
+			org_quiltmc_parsers_gson: gson 0.2.1
+			org_quiltmc_parsers_json: json 0.2.1
+	Server Running: true
+	Data Packs: vanilla, fabric, resources/t_and_t_waystones_patch_1.19.2 (incompatible)
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Is Modded: Definitely; Server brand changed to 'fabric'
+	Type: Dedicated Server (map_server.txt)

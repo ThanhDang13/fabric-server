@@ -1,0 +1,16 @@
+{
+  "main_menu": {
+    "top_left": [],
+    "top_right": [],
+    "bottom_left": [{"text":"by zed1ker"}],
+    "bottom_right": [{"text":"Action & Stuff 1.21.4"},"clickEvent":{"action":"open_url","value":"https://modrinth.com/modpack/actionandstuffonjava"}],
+    "mod_blacklist": []
+  },
+  "pause_menu": {
+    "top_left": [],
+    "top_right": [],
+    "bottom_left": [],
+    "bottom_right": [],
+    "mod_blacklist": []
+  }
+}
