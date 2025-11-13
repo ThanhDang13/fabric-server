@@ -1,0 +1,464 @@
+{
+  "esp": true,
+  "fullBrightConfig": {
+    "enabled": true
+  },
+  "autoFishConfig": {
+    "enabled": false
+  },
+  "armorOverlayConfig": {
+    "enabled": false
+  },
+  "blocks": {
+    "configs": [
+      {
+        "block": "minecraft:iron_ore",
+        "enabled": false,
+        "drawTracers": false,
+        "tracerColor": -1,
+        "drawOutline": true,
+        "outlineColor": -1,
+        "maxDistance": 20.0
+      },
+      {
+        "block": "minecraft:chest",
+        "enabled": true,
+        "drawTracers": false,
+        "tracerColor": -655576,
+        "drawOutline": true,
+        "outlineColor": -655576,
+        "maxDistance": 50.0
+      },
+      {
+        "block": "minecraft:furnace",
+        "enabled": false,
+        "drawTracers": true,
+        "tracerColor": -1,
+        "drawOutline": true,
+        "outlineColor": -1,
+        "maxDistance": 1000.0
+      },
+      {
+        "block": "minecraft:diamond_ore",
+        "enabled": true,
+        "drawTracers": false,
+        "tracerColor": -12405761,
+        "drawOutline": true,
+        "outlineColor": -12405761,
+        "maxDistance": 50.0
+      },
+      {
+        "block": "minecraft:deepslate_diamond_ore",
+        "enabled": true,
+        "drawTracers": false,
+        "tracerColor": -12405761,
+        "drawOutline": true,
+        "outlineColor": -12405761,
+        "maxDistance": 30.0
+      },
+      {
+        "block": "minecraft:end_portal_frame",
+        "enabled": false,
+        "drawTracers": true,
+        "tracerColor": -1,
+        "drawOutline": true,
+        "outlineColor": -1,
+        "maxDistance": 1000.0
+      }
+    ]
+  },
+  "entities": {
+    "configs": [
+      {
+        "clazz": "net.minecraft.world.entity.player.Player",
+        "glow": true,
+        "glowColor": -62921,
+        "drawTitles": false,
+        "showDefaultNames": false,
+        "showHp": true,
+        "showEquippedItems": false,
+        "showOwner": false,
+        "enabled": true,
+        "drawTracers": false,
+        "tracerColor": -62921,
+        "drawOutline": false,
+        "outlineColor": -62921,
+        "maxDistance": 1000.0
+      }
+    ]
+  },
+  "lightLevelConfig": {
+    "showLocations": false,
+    "showTracers": true,
+    "showLightLevelValue": false,
+    "useFreeCamPosition": false,
+    "maxDistance": 20.0,
+    "enabled": false
+  },
+  "killAuraConfig": {
+    "overrideAttackRange": true,
+    "maxRange": 6.0,
+    "delayMode": "ConstDelay",
+    "attackTickInterval": 5,
+    "extraTicks": 0.0,
+    "priorities": [
+      {
+        "name": "Enemies",
+        "enabled": true,
+        "description": "Includes Monsters, Slimes, Magma Cubes, Hoglin. Excludes Neutral Mobs (Enderman, ZombifiedPiglin). Endermen can be targeted only in creepy state."
+      },
+      {
+        "name": "Shulker Bullets",
+        "enabled": true
+      },
+      {
+        "name": "Fireballs",
+        "enabled": true,
+        "description": "Ghast projectiles."
+      }
+    ],
+    "customEntries": [],
+    "attackAll": false,
+    "enabled": false
+  },
+  "boatHackConfig": {
+    "overrideFriction": false,
+    "friction": 0.9,
+    "fly": false,
+    "horizontalFlySpeed": 10.0,
+    "verticalFlySpeed": 5.0
+  },
+  "autoDisconnectConfig": {
+    "enabled": false
+  },
+  "shulkerTooltipConfig": {
+    "enabled": true
+  },
+  "projectilePathConfig": {
+    "enderPearls": true,
+    "bows": false,
+    "crossbows": false,
+    "tridents": false,
+    "snowballs": false,
+    "potions": false,
+    "expBottles": false,
+    "eggs": false,
+    "showTraces": false,
+    "tracesDuration": 10,
+    "fadeDuration": 2
+  },
+  "elytraHackConfig": {
+    "method": "VanillaFly",
+    "vanillaFlyVerticalAcceleration": 4.0,
+    "vanillaFlyHorizontalAcceleration": 1.0,
+    "maxSpeed": 50.0,
+    "enabled": false
+  },
+  "pigHackConfig": {
+    "enabled": false,
+    "allowRideWithoutCarrot": true,
+    "overrideSteeringSpeed": true,
+    "steeringSpeed": 0.1
+  },
+  "endCityChunksConfig": {
+    "enabled": false
+  },
+  "explorationMiniMapConfig": {
+    "enabled": false
+  },
+  "autoCriticalsConfig": {
+    "onlyOnGround": false,
+    "enabled": false
+  },
+  "flyHackConfig": {
+    "overrideFlyingSpeed": false,
+    "flyingSpeed": 0.05,
+    "onGroundFlag": false,
+    "enabled": false
+  },
+  "autoTotemConfig": {
+    "enabled": false
+  },
+  "deathCoordinatesConfig": {
+    "enabled": true
+  },
+  "elytraTunnelConfig": {
+    "enabled": false,
+    "limit": 122.8
+  },
+  "freeCamConfig": {
+    "acceleration": 50.0,
+    "maxSpeed": 50.0,
+    "slowdownFactor": 0.01,
+    "renderHands": false,
+    "target": true
+  },
+  "movementHackConfig": {
+    "disableSlowdownOnUseItem": false,
+    "scaleInputVector": false,
+    "inputVectorFactor": 1.0,
+    "disableCrouchingSlowdown": false,
+    "antiKnockback": false,
+    "antiPush": false,
+    "scaleJumpHeight": false,
+    "jumpHeightFactor": 1.0,
+    "disableSlimePhysics": false
+  },
+  "lockInputsConfig": {
+    "mouseInputDisabled": false,
+    "holdForward": false,
+    "holdAttack": false,
+    "holdUse": false
+  },
+  "scaffoldConfig": {
+    "distance": 0.0,
+    "replaceBlocksFromInventory": false,
+    "attachToAir": false,
+    "keepSelectedSlot": false,
+    "enabled": false
+  },
+  "advancedTooltipsConfig": {
+    "beeContainer": false,
+    "repairCost": false
+  },
+  "fogConfig": {
+    "disableFog": false,
+    "method": "SkipSetupFog"
+  },
+  "instantDisconnectConfig": {
+    "enabled": false
+  },
+  "scriptsConfig": {
+    "scripts": [
+      {
+        "name": "Toggle ESP",
+        "code": "main.toggleEsp();"
+      },
+      {
+        "name": "Toggle FreeCam",
+        "code": "freeCam.toggle();"
+      },
+      {
+        "name": "killAura",
+        "code": "killAura.toggle();"
+      }
+    ]
+  },
+  "keyBindingsConfig": {
+    "bindings": [
+      "Toggle ESP",
+      "Toggle FreeCam",
+      null,
+      "killAura",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "worldMarkersConfig": {
+    "entries": [],
+    "fontSize": 12,
+    "antiAliasing": false,
+    "borderWidth": 1,
+    "enabled": false
+  },
+  "userNameConfig": {
+    "enabled": false,
+    "showNameInTitle": false
+  },
+  "newChunksConfig": {
+    "enabled": false
+  },
+  "autoDropConfig": {
+    "items": []
+  },
+  "containerButtonsConfig": {
+    "showTakeAll": false,
+    "showSmartPut": false,
+    "checkShulkerContent": false,
+    "showDropAll": false,
+    "autoTakeAll": false,
+    "autoDropAll": false,
+    "autoClose": false,
+    "useFilter": false,
+    "items": []
+  },
+  "chunksConfig": {
+    "ignoreServerViewDistance": false,
+    "dontUnloadChunks": false
+  },
+  "statusOverlayConfig": {
+    "enabled": false
+  },
+  "statusEffectsConfig": {
+    "enabled": false
+  },
+  "autoEatConfig": {
+    "isHungerLimitEnabled": false,
+    "hungerLimit": 10,
+    "enabled": false
+  },
+  "noFallConfig": {
+    "enabled": false
+  },
+  "particlesConfig": {
+    "disableBlockBreaking": false,
+    "disableBlockDestroyed": false
+  },
+  "antiRespawnResetConfig": {
+    "enabled": false
+  },
+  "fastBreakConfig": {
+    "factor": 1.5,
+    "enabled": true
+  },
+  "containerSummaryConfig": {
+    "enabled": false,
+    "showForInventory": false
+  },
+  "autoCraftConfig": {
+    "items": [],
+    "enabled": false
+  },
+  "reachConfig": {
+    "overrideReachDistance": false,
+    "reachDistance": 4.5,
+    "overrideAttackRange": false,
+    "attackRange": 3.0
+  },
+  "gameTickScriptingConfig": {
+    "enabled": false
+  },
+  "autoBucketConfig": {
+    "speedThreshold": 15.0,
+    "useWaterBucket": false,
+    "useSlimeBlock": false,
+    "useCobweb": false,
+    "useHoneyBlock": false,
+    "useHayBale": false,
+    "autoMoveOnHotbar": false,
+    "hotbarSlot": 8,
+    "autoPickUp": false,
+    "reachDistance": 4.5,
+    "enabled": false
+  },
+  "schematicaConfig": {
+    "showMissingBlockGhosts": true,
+    "missingBlockGhostsMaxDistance": 10.0,
+    "showMissingBlockTracers": false,
+    "missingBlockTracersMaxDistance": 30.0,
+    "showMissingBlockCubes": true,
+    "missingBlockCubesMaxDistance": 100.0,
+    "showWrongBlockTracers": false,
+    "wrongBlockTracersMaxDistance": 10.0,
+    "showWrongBlockCubes": false,
+    "wrongBlockCubesMaxDistance": 10.0,
+    "replaceableAsAir": false,
+    "airAlwaysValid": false,
+    "autoBuild": false,
+    "maxRange": 5.0,
+    "autoSelectSlots": [
+      9
+    ],
+    "attachToAir": false,
+    "useShift": false,
+    "enabled": false
+  },
+  "performanceConfig": {
+    "limitBackgroundWindowFps": false,
+    "backgroundWindowFps": 20
+  },
+  "entityTitleConfig": {
+    "fontSize": 12,
+    "antiAliasing": false,
+    "enchFontSize": 12,
+    "enchAntiAliasing": false
+  },
+  "coordinateLeakProtectionConfig": {
+    "enabled": false
+  },
+  "scriptedBlockPlacerConfig": {
+    "debugMode": false,
+    "maxRange": 5.0,
+    "autoSelectSlots": [
+      9
+    ],
+    "attachToAir": false,
+    "useShift": false,
+    "enabled": false
+  },
+  "bobHurtConfig": {
+    "enabled": false
+  },
+  "autoAttackConfig": {
+    "extraTicks": 0.0,
+    "enabled": false
+  },
+  "noWeatherConfig": {
+    "enabled": false
+  },
+  "fakeWeatherConfig": {
+    "enabled": false
+  },
+  "autoAimConfig": {
+    "enabled": false
+  },
+  "chatUtilitiesConfig": {
+    "dontCloseChatOnEnter": false,
+    "overrideMessageLimit": false,
+    "messageLimit": 100,
+    "showTime": false,
+    "timeFormat": "HH:mm:ss"
+  },
+  "execConfig": {
+    "enabled": false
+  },
+  "villagerRollerConfig": {},
+  "autoHotbarConfig": {
+    "refillSlot1": false,
+    "refillSlot2": false,
+    "refillSlot3": false,
+    "refillSlot4": false,
+    "refillSlot5": false,
+    "refillSlot6": false,
+    "refillSlot7": false,
+    "refillSlot8": false,
+    "refillSlot9": false,
+    "refillSlotOffhand": false,
+    "enabled": false
+  },
+  "invMoveConfig": {
+    "enabled": false
+  },
+  "areaMineConfig": {
+    "radius": 3.0,
+    "preview": false,
+    "enabled": false
+  },
+  "serverPluginsConfig": {
+    "waitTicks": 20,
+    "autoPrint": false
+  },
+  "hitboxSizeConfig": {
+    "widthMode": "PERCENT",
+    "widthPercent": 25.0,
+    "widthAbsolute": 0.5,
+    "heightMode": "PERCENT",
+    "heightPercent": 0.0,
+    "heightAbsolute": 0.0,
+    "enabled": false
+  }
+}
